@@ -162,8 +162,18 @@
                         <p class="section-title">
                             Салаты
                         </p>
+                        <div style="padding: 20px; background: #BDBDBD;">
+                            <span data-product="472" onclick="dataSetInfo(this)">Add</span>
+                        </div>
+                        <div style="padding: 20px; background: #BDBDBD;">
+                            <span data-product="473" onclick="dataSetInfo(this)">Add</span>
+                        </div>
+                        <div style="padding: 20px; background: #BDBDBD;">
+                            <span data-product="474" onclick="dataSetInfo(this)">Add</span>
+                        </div>
                         <div class="products-wrapper">
-                            <div class="product-card">
+                            <div class="product-card" id="product-472" >
+                                <span class="mobile-close" data-product="472" onclick="dataSetInfo(this)"><img src="/assets/icons/delete.svg" alt=""></span>
                                 <picture class="product-card_img_block">
                                     <img class="product-card_image" src="/assets/images/pizza-card.png" alt="">
                                 </picture>
@@ -179,41 +189,41 @@
                                     </div>
                                     <div class="product-card_options_block">
                                         <div class="product-card_option">
-                                            <div class="product-card_option_group_map mb-2">
-                                                <div class="product-card_option_group">
+                                            <div class="option_group_map mb-2">
+                                                <div class="option_group">
                                                     <input type="radio" class="radio-type" name="slideItem-1"
                                                         id="slide-item-1" class="slide-toggle" checked />
                                                     <label class="label-type"
                                                         for="slide-item-1"><span>Тонкое</span></label>
                                                 </div>
-                                                <div class="product-card_option_group">
+                                                <div class="option_group">
                                                     <input type="radio" class="radio-type" name="slideItem-1"
                                                         id="slide-item-2" class="slide-toggle" />
                                                     <label class="label-type"
                                                         for="slide-item-2"><span>Толстое</span></label>
                                                 </div>
                                             </div>
-                                            <div class="product-card_option_group_map mb-2">
-                                                <div class="product-card_option_group">
+                                            <div class="option_group_map mb-2">
+                                                <div class="option_group">
                                                     <input type="radio" class="radio-type" name="slideItem-2"
                                                         id="togle-413" class="slide-toggle" checked />
                                                     <label class="label-type" for="togle-413"><span>23 см</span></label>
                                                 </div>
-                                                <div class="product-card_option_group">
+                                                <div class="option_group">
                                                     <input type="radio" class="radio-type" name="slideItem-2"
                                                         id="toggle-511" class="slide-toggle" />
                                                     <label class="label-type" for="toggle-511"><span>30
                                                             см</span></label>
                                                 </div>
-                                                <div class="product-card_option_group">
+                                                <div class="option_group">
                                                     <input type="radio" class="radio-type" name="slideItem-2"
                                                         id="toggle-345" class="slide-toggle" />
                                                     <label class="label-type" for="toggle-345"><span>40
                                                             см</span></label>
                                                 </div>
                                             </div>
-                                            <div class="product-card_option_change my-2"
-                                                onclick="document.querySelector('#overlay-472').classList.toggle('show')">
+                                            <div class="option_change my-2"
+                                                onclick="showModalOverlay('#overlay-472')">
                                                 <img class="mr-1" src="/assets/icons/pizza-btn.svg" alt="">
                                                 <span>Добавить/убрать</span>
                                             </div>
@@ -277,13 +287,14 @@
                                                 class="product-card_modal_actions d-flex flex-column align-items-center mt-4">
                                                 <a href="#" class="btn btn-primary">В корзину</a>
                                                 <span class="close my-3"
-                                                    onclick="document.querySelector('.product-card_overlay').classList.toggle('show')">Отменить</span>
+                                                    onclick="closeModalOverlay('#overlay-472')">Отменить</span>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="product-card">
+                            <div class="product-card" id="product-473">
+                                <span class="mobile-close" data-product="473" onclick="dataSetInfo(this)"><img src="/assets/icons/delete.svg" alt=""></span>
                                 <picture class="product-card_img_block">
                                     <img class="product-card_image" src="/assets/images/pizza-card.png" alt="">
                                 </picture>
@@ -299,22 +310,22 @@
                                     </div>
                                     <div class="product-card_options_block">
                                         <div class="product-card_option">
-                                            <div class="product-card_option_group_map mb-2">
-                                                <div class="product-card_option_group">
+                                            <div class="option_group_map mb-2">
+                                                <div class="option_group">
                                                     <input type="radio" class="radio-type" name="toggle671"
                                                         id="slide-item-41" class="slide-toggle" checked />
                                                     <label class="label-type"
                                                         for="slide-item-41"><span>Тонкое</span></label>
                                                 </div>
-                                                <div class="product-card_option_group">
+                                                <div class="option_group">
                                                     <input type="radio" class="radio-type" name="toggle671"
                                                         id="slide-item-42" class="slide-toggle" />
                                                     <label class="label-type"
                                                         for="slide-item-42"><span>Толстое</span></label>
                                                 </div>
                                             </div>
-                                            <div class="product-card_option_change my-2"
-                                                onclick="document.querySelector('#overlay-473').classList.toggle('show')">
+                                            <div class="option_change my-2"
+                                                onclick="showModalOverlay('#overlay-473')">
                                                 <img class="mr-1" src="/assets/icons/pizza-btn.svg" alt="">
                                                 <span>Добавить/убрать</span>
                                             </div>
@@ -371,13 +382,14 @@
                                                 class="product-card_modal_actions d-flex flex-column align-items-center mt-4">
                                                 <a href="#" class="btn btn-primary">В корзину</a>
                                                 <span class="close my-3"
-                                                    onclick="document.querySelector('#overlay-473').classList.toggle('show')">Отменить</span>
+                                                    onclick="closeModalOverlay('#overlay-473')">Отменить</span>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="product-card">
+                            <div class="product-card" id="product-474">
+                                <span class="mobile-close" data-product="474" onclick="dataSetInfo(this)"><img src="/assets/icons/delete.svg" alt=""></span>
                                 <picture class="product-card_img_block">
                                     <img class="product-card_image" src="/assets/images/pizza-card.png" alt="">
                                 </picture>
@@ -394,23 +406,23 @@
                                     </div>
                                     <div class="product-card_options_block">
                                         <div class="product-card_option">
-                                            <div class="product-card_option_group_map mb-2">
-                                                <div class="product-card_option_group">
+                                            <div class="option_group_map mb-2">
+                                                <div class="option_group">
                                                     <input type="radio" class="radio-type" name="toggle633"
                                                         id="slide-item-71" class="slide-toggle" checked />
                                                     <label class="label-type"
                                                         for="slide-item-71"><span>Тонкое</span></label>
                                                 </div>
                                             </div>
-                                            <div class="product-card_option_group_map mb-2">
-                                                <div class="product-card_option_group">
+                                            <div class="option_group_map mb-2">
+                                                <div class="option_group">
                                                     <input type="radio" class="radio-type" name="toggle636"
                                                         id="togle-415" class="slide-toggle" checked />
                                                     <label class="label-type" for="togle-415"><span>30 см</span></label>
                                                 </div>
                                             </div>
-                                            <div class="product-card_option_change my-2"
-                                                onclick="document.querySelector('#overlay-474').classList.toggle('show')">
+                                            <div class="option_change my-2"
+                                                onclick="showModalOverlay('#overlay-474')">
                                                 <img class="mr-1" src="/assets/icons/pizza-btn.svg" alt="">
                                                 <span>Добавить/убрать</span>
                                             </div>
@@ -467,7 +479,7 @@
                                                 class="product-card_modal_actions d-flex flex-column align-items-center mt-4">
                                                 <a href="#" class="btn btn-primary">В корзину</a>
                                                 <span class="close my-3"
-                                                    onclick="document.querySelector('#overlay-474').classList.toggle('show')">Отменить</span>
+                                                    onclick="closeModalOverlay('#overlay-474')">Отменить</span>
                                             </div>
                                         </div>
                                     </div>
