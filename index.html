@@ -162,18 +162,76 @@
                         <p class="section-title">
                             Салаты
                         </p>
-                        <div style="padding: 20px; background: #BDBDBD;">
-                            <span data-product="472" onclick="dataSetInfo(this)">Add</span>
-                        </div>
-                        <div style="padding: 20px; background: #BDBDBD;">
-                            <span data-product="473" onclick="dataSetInfo(this)">Add</span>
-                        </div>
-                        <div style="padding: 20px; background: #BDBDBD;">
-                            <span data-product="474" onclick="dataSetInfo(this)">Add</span>
-                        </div>
                         <div class="products-wrapper">
-                            <div class="product-card" id="product-472" >
-                                <span class="mobile-close" data-product="472" onclick="dataSetInfo(this)"><img src="/assets/icons/delete.svg" alt=""></span>
+                            <div class="product-card-mobile">
+                                <picture>
+                                    <img src="/assets/images/pizza-card.png" alt="">
+                                </picture>
+                                <div class="product-card-mobile_body d-flex flex-column justify-content-between">
+                                    <div class="product-card-mobile_title">
+                                        Название блюда
+                                    </div>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <div class="price">125 ₽</div>
+                                        <div class="sale"></div>
+                                        <button class="btn" data-product="472" onclick="dataSetInfo(this)">
+                                            <svg width="11" height="12" viewBox="0 0 11 12" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <rect x="1" y="5" width="9" height="2" fill="white" />
+                                                <rect x="4.5" y="10.5" width="9" height="2" transform="rotate(-90 4.5 10.5)"
+                                                    fill="white" />
+                                            </svg>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product-card-mobile">
+                                <picture>
+                                    <img src="/assets/images/pizza-card.png" alt="">
+                                </picture>
+                                <div class="product-card-mobile_body d-flex flex-column justify-content-between">
+                                    <div class="product-card-mobile_title">
+                                        Название блюда
+                                    </div>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <div class="price">125 ₽</div>
+                                        <div class="sale">175 ₽</div>
+                                        <button class="btn" data-product="473" onclick="dataSetInfo(this)">
+                                            <svg width="11" height="12" viewBox="0 0 11 12" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <rect x="1" y="5" width="9" height="2" fill="white" />
+                                                <rect x="4.5" y="10.5" width="9" height="2" transform="rotate(-90 4.5 10.5)"
+                                                    fill="white" />
+                                            </svg>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product-card-mobile">
+                                <picture>
+                                    <img src="/assets/images/pizza-card.png" alt="">
+                                </picture>
+                                <div class="product-card-mobile_body d-flex flex-column justify-content-between">
+                                    <div class="product-card-mobile_title">
+                                        Название блюда две строки макс.
+                                    </div>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <div class="price">125 ₽</div>
+                                        <div class="sale"></div>
+                                        <button class="btn" data-product="474" onclick="dataSetInfo(this)">
+                                            <svg width="11" height="12" viewBox="0 0 11 12" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <rect x="1" y="5" width="9" height="2" fill="white" />
+                                                <rect x="4.5" y="10.5" width="9" height="2" transform="rotate(-90 4.5 10.5)"
+                                                    fill="white" />
+                                            </svg>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product-card" id="product-472">
+                                <span class="mobile-close" data-product="472" onclick="dataSetInfo(this)"><img
+                                        src="/assets/icons/delete.svg" alt=""></span>
                                 <picture class="product-card_img_block">
                                     <img class="product-card_image" src="/assets/images/pizza-card.png" alt="">
                                 </picture>
@@ -222,8 +280,7 @@
                                                             см</span></label>
                                                 </div>
                                             </div>
-                                            <div class="option_change my-2"
-                                                onclick="showModalOverlay('#overlay-472')">
+                                            <div class="option_change my-2" onclick="showModalOverlay('#overlay-472')">
                                                 <img class="mr-1" src="/assets/icons/pizza-btn.svg" alt="">
                                                 <span>Добавить/убрать</span>
                                             </div>
@@ -294,7 +351,8 @@
                                 </div>
                             </div>
                             <div class="product-card" id="product-473">
-                                <span class="mobile-close" data-product="473" onclick="dataSetInfo(this)"><img src="/assets/icons/delete.svg" alt=""></span>
+                                <span class="mobile-close" data-product="473" onclick="dataSetInfo(this)"><img
+                                        src="/assets/icons/delete.svg" alt=""></span>
                                 <picture class="product-card_img_block">
                                     <img class="product-card_image" src="/assets/images/pizza-card.png" alt="">
                                 </picture>
@@ -324,8 +382,7 @@
                                                         for="slide-item-42"><span>Толстое</span></label>
                                                 </div>
                                             </div>
-                                            <div class="option_change my-2"
-                                                onclick="showModalOverlay('#overlay-473')">
+                                            <div class="option_change my-2" onclick="showModalOverlay('#overlay-473')">
                                                 <img class="mr-1" src="/assets/icons/pizza-btn.svg" alt="">
                                                 <span>Добавить/убрать</span>
                                             </div>
@@ -389,7 +446,8 @@
                                 </div>
                             </div>
                             <div class="product-card" id="product-474">
-                                <span class="mobile-close" data-product="474" onclick="dataSetInfo(this)"><img src="/assets/icons/delete.svg" alt=""></span>
+                                <span class="mobile-close" data-product="474" onclick="dataSetInfo(this)"><img
+                                        src="/assets/icons/delete.svg" alt=""></span>
                                 <picture class="product-card_img_block">
                                     <img class="product-card_image" src="/assets/images/pizza-card.png" alt="">
                                 </picture>
@@ -421,8 +479,7 @@
                                                     <label class="label-type" for="togle-415"><span>30 см</span></label>
                                                 </div>
                                             </div>
-                                            <div class="option_change my-2"
-                                                onclick="showModalOverlay('#overlay-474')">
+                                            <div class="option_change my-2" onclick="showModalOverlay('#overlay-474')">
                                                 <img class="mr-1" src="/assets/icons/pizza-btn.svg" alt="">
                                                 <span>Добавить/убрать</span>
                                             </div>

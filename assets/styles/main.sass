@@ -435,10 +435,13 @@ summary
     display: grid
     grid-template-columns: 1fr 1fr 1fr
     gap: 30px
-    @media screen and ( max-width: 1200px )
+    @media screen and ( max-width: $desktop )
         grid-template-columns: 1fr 1fr
-    @media screen and ( max-width: 990px )
+    @media screen and ( max-width: $desktop-sm )
         grid-template-columns: 1fr
+    @media screen and ( max-width: $mobile )
+        gap: 10px
+        margin: 0 -14px
     & .product-card
         display: flex
         flex-direction: column
@@ -602,12 +605,56 @@ summary
                 &:hover
                     transform: scale(1.05)
 
+.product-card-mobile
+    display: none
+    @media screen and ( max-width: $mobile )
+        display: flex
+        padding: 5px 20px
+        background: $white-color
+        border-bottom: 1px solid $sub-text-color-1
+    & img
+        width: 100px
+        height: 100px
+        border-radius: 10px
+        object-fit: cover
+    & .btn
+        width: 40px
+        height: 30px
+        display: flex
+        justify-content: center
+        align-items: center
+        background: $green-color-hover
+        transition: .2s all
+        border-radius: 15px
+        opacity: .3
+        &:hover
+            opacity: 1
+            background: $green-color
+    &_body
+        width: 100%
+        padding: 0 0 10px 20px
+        position: relative
+        & .price
+            font-size: 18px
+        & .sale
+            position: absolute
+            bottom: 35px
+            left: 22px
+            font-size: 12px
+            color: #A7A7A7
+            text-decoration: line-through
+    &_title
+        font-size: 22px
+        font-weight: 500
+        line-height: 26px
+        color: $title-color
+
 .option_group_map
-            position: relative
-            display: flex
-            justify-content: space-around
-            border: 1px solid #F0F0F0
-            border-radius: 50px
+    position: relative
+    display: flex
+    justify-content: space-around
+    border: 1px solid #F0F0F0
+    border-radius: 50px
 .option_group
     z-index: 2
     flex: 1
