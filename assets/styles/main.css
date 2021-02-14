@@ -128,10 +128,6 @@ summary::-webkit-details-marker {
   }
 }
 
-.overflow {
-  overflow: hidden;
-}
-
 .link {
   text-decoration: none;
   color: #C1272D;
@@ -804,7 +800,7 @@ summary::-webkit-details-marker {
 @media screen and (max-width: 576px) {
   .products-wrapper {
     gap: 10px;
-    margin: 0 -14px;
+    margin: 0 -20px;
   }
 }
 
