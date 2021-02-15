@@ -1,11 +1,332 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/assets/styles/grid.css">
+    <link rel="stylesheet" href="/assets/styles/main.css">
     <title>Order</title>
 </head>
+
 <body>
-    Order
+    <header class="header">
+        <img class="top-plank" src="/assets/images/top-plank.png" alt="">
+        <div class="container">
+            <div class="header-wrapper d-flex">
+                <div class="header-logo">
+                    <a href="/contact.html">
+                        <picture class="logo-image-block">
+                            <img src="/assets/images/tri-iksa.logo.png" alt="">
+                        </picture>
+                    </a>
+                </div>
+                <div class="header-info d-flex flex-column">
+                    <div class="header-info_top d-flex flex-column align-items-center">
+                        <span>Наш адрес:</span>
+                        <span>ул. Борсоева, 56</span>
+                    </div>
+                    <a href="#" class="header-info_btn not-main mt-3">
+                        <img class="mr-1" src="/assets/icons/phone.svg" alt="">
+                        <span>8 (3012) 44-03-66</span>
+                    </a>
+                </div>
+                <div class="header-actions d-flex">
+                    <span class="header-menu d-flex">
+                        <img class="active" src="/assets/icons/Menu.svg" alt="">
+                        <img src="/assets/icons/Close.svg" alt="">
+                    </span>
+                    <a class="header-login d-flex align-items-center" href="#">
+                        <span class="login-name mr-2">Войти</span>
+                        <img class="login-icon" src="/assets/icons/Union.svg" alt="">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="main-products-wrapper">
+            <div class="products-cart-wrapper">
+                <div class="container grid">
+                    <div class="products-section">
+                        <p class="section-title h1">
+                            Оформление заказа
+                        </p>
+                        <div>
+                            1
+                        </div>
+                        <div class="order-wrapper mt-5">
+                            <p class="section-title h3">Контакты</p>
+                            <div class="d-flex contacts-group">
+                                <div class="input-text-group">
+                                    <span>Имя*</span>
+                                    <input class="input-text" type="text">
+                                </div>
+                                <div class="input-text-group">
+                                    <span>Номер телефона*</span>
+                                    <input class="input-text" type="text" placeholder="+7">
+                                </div>
+                                <div class="input-text-group">
+                                    <span>Email*</span>
+                                    <input class="input-text" type="text">
+                                </div>
+                            </div>
+                            <div class="delivery mt-5">
+                                <div class="option_group_map mb-2">
+                                    <div class="option_group">
+                                        <input type="radio" class="radio-type" name="toggle671" id="slide-item-41"
+                                            class="slide-toggle" checked />
+                                        <label class="label-type" for="slide-item-41"><span>Доставка</span></label>
+                                    </div>
+                                    <div class="option_group">
+                                        <input type="radio" class="radio-type" name="toggle671" id="slide-item-42"
+                                            class="slide-toggle" />
+                                        <label class="label-type" for="slide-item-42"><span>Самовывоз</span></label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="address mt-3">
+                                <d-flex class="flex-column">
+                                    <div class="input-text-group">
+                                        <span>Адрес*</span>
+                                        <input class="input-text" type="text">
+                                    </div>
+                                    <div class="address_properties mt-3">
+                                        <div class="input-text-group">
+                                            <span>Если есть, укажите:</span>
+                                            <input class="input-text" type="text" placeholder="Квартира">
+                                        </div>
+                                        <div class="input-text-group">
+                                            <input class="input-text" type="text" placeholder="Этаж">
+                                        </div>
+                                        <div class="input-text-group">
+                                            <input class="input-text" type="text" placeholder="Домофон">
+                                        </div>
+                                        <div class="input-text-group">
+                                            <input class="input-text" type="text" placeholder="Подъезд">
+                                        </div>
+                                    </div>
+                                </d-flex>
+                            </div>
+                            <div class="delivery-time mt-5">
+                                <p class="section-title h3">Удобное время доставки</p>
+                                <div class="option_group_map mt-4 mb-2">
+                                    <div class="option_group">
+                                        <input type="radio" class="radio-type" name="toggle672" id="slide-item-511"
+                                            class="slide-toggle" checked />
+                                        <label class="label-type" for="slide-item-511"><span>Как можно
+                                                скорее</span></label>
+                                    </div>
+                                    <div class="option_group">
+                                        <input type="radio" class="radio-type" name="toggle672" id="slide-item-521"
+                                            class="slide-toggle" />
+                                        <label class="label-type" for="slide-item-521"><span>Выбрать
+                                                время</span></label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="pay mt-5">
+                                <p class="section-title h3">Оплата</p>
+                                <div class="option_group_map mt-4 mb-2">
+                                    <div class="option_group">
+                                        <input type="radio" class="radio-type" name="toggle674" id="slide-item-525"
+                                            class="slide-toggle" checked />
+                                        <label class="label-type" for="slide-item-525"><span>Наличными</span></label>
+                                    </div>
+                                    <div class="option_group">
+                                        <input type="radio" class="radio-type" name="toggle674" id="slide-item-526"
+                                            class="slide-toggle" />
+                                        <label class="label-type" for="slide-item-526"><span>Картой
+                                                курьеру</span></label>
+                                    </div>
+                                    <div class="option_group">
+                                        <input type="radio" class="radio-type" name="toggle674" id="slide-item-527"
+                                            class="slide-toggle" />
+                                        <label class="label-type" for="slide-item-527"><span>Картой на
+                                                сайте</span></label>
+                                    </div>
+                                </div>
+                                <div class="input-text-group mt-3">
+                                    <span>Сдача с:</span>
+                                    <input class="input-text" type="text">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <aside class="cart">
+                        <div class="cart-wrapper promo">
+                            <span style="color: #BDBDBD; font-size: 12px; padding-left: 15px;">Есть промокод?</span>
+                            <div class="cart-promo-code">
+                                <input type="text" placeholder="Введите">
+                                <button class="btn" type="submit">ок</button>
+                            </div>
+                        </div>
+                    </aside>
+                </div>
+            </div>
+        </div>
+        <div class="header-list-menu">
+            <ul>
+                <li>
+                    <a href="#" class="link">
+                        Контакты
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="link">
+                        Доставка и Оплата
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="link">
+                        Акции
+                    </a>
+                </li>
+            </ul>
+            <div class="mobile-add-info ">
+                <div class="top d-flex flex-column align-items-center">
+                    <small>Наш адрес:</small>
+                    <p>ул. Борсоева, 56</p>
+                    <a class="btn my-2" href="#">
+                        <img class="mr-1" src="/assets/icons/phone.svg" alt="">
+                        <span>8 (3012) 44-03-66</span>
+                    </a>
+                </div>
+                <div class="socials mt-3">
+                    <div class="d-flex">
+                        <a href="#" class="link mx-2">
+                            <img src="/assets/icons/instagram.png" alt="">
+                        </a>
+                        <a href="#" class="link mx-2">
+                            <img src="/assets/icons/whatsapp.png" alt="">
+                        </a>
+                        <a href="#" class="link mx-2">
+                            <img src="/assets/icons/viber.png" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <a class="mini-cart mini-cart_link link" href="#">
+        <span>750 ₽</span>
+        <svg width="27" height="24" viewBox="0 0 27 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+                d="M27 10.125V10.875C27 11.4963 26.4963 12 25.875 12H25.5L24.276 20.5682C24.1176 21.6767 23.1683 22.5 22.0486 22.5H4.95141C3.8317 22.5 2.88239 21.6767 2.724 20.5682L1.5 12H1.125C0.503672 12 0 11.4963 0 10.875V10.125C0 9.50368 0.503672 9.00001 1.125 9.00001H4.28161L9.28692 2.11778C9.77419 1.44784 10.7123 1.29967 11.3823 1.78693C12.0523 2.2742 12.2004 3.21231 11.7131 3.88229L7.99111 9.00001H19.0089L15.2869 3.88225C14.7996 3.21231 14.9478 2.27415 15.6178 1.78689C16.2877 1.29962 17.2259 1.44775 17.7131 2.11773L22.7184 9.00001H25.875C26.4963 9.00001 27 9.50368 27 10.125ZM14.625 18.375V13.125C14.625 12.5037 14.1213 12 13.5 12C12.8787 12 12.375 12.5037 12.375 13.125V18.375C12.375 18.9963 12.8787 19.5 13.5 19.5C14.1213 19.5 14.625 18.9963 14.625 18.375ZM19.875 18.375V13.125C19.875 12.5037 19.3713 12 18.75 12C18.1287 12 17.625 12.5037 17.625 13.125V18.375C17.625 18.9963 18.1287 19.5 18.75 19.5C19.3713 19.5 19.875 18.9963 19.875 18.375ZM9.375 18.375V13.125C9.375 12.5037 8.87133 12 8.25 12C7.62867 12 7.125 12.5037 7.125 13.125V18.375C7.125 18.9963 7.62867 19.5 8.25 19.5C8.87133 19.5 9.375 18.9963 9.375 18.375Z"
+                fill="white" />
+        </svg>
+    </a>
+    <footer class="footer-wrapper">
+        <div class="footer-top">
+            <div class="container">
+                <div
+                    class="d-flex flex-column flex-md-row justify-content-md-between justify-content-center align-items-center flex-wrap">
+                    <div class="footer-top_logo d-flex flex-column">
+                        <picture>
+                            <img src="/assets/images/tri-iksa.logo.png" alt="">
+                        </picture>
+                        <a href="#" class="link mt-3 d-flex align-items-center">
+                            <svg class="mr-2" width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill="var(--primary-color)"
+                                    d="M6.5078 0.881307L8.40308 0L11.097 5.25984L9.28038 6.15381C8.92239 6.99312 10.7197 10.3464 11.4783 10.4017C11.5383 10.363 13.2596 9.51638 13.2596 9.51638L15.9995 14.8049C15.9995 14.8049 14.1569 15.7075 14.0969 15.7355C8.8564 18.1288 1.36329 3.56322 6.5078 0.881307ZM7.79376 1.73061L7.11178 2.0666C3.58322 3.90788 9.89703 16.1895 13.5436 14.5236L14.1916 14.2076L12.6776 11.2857L11.9936 11.619C9.88503 12.6503 6.4858 6.13981 8.62374 4.99385L9.29505 4.66252L7.79376 1.73061ZM7.28778 13.9849C6.30514 14.9462 4.67852 15.1235 4.21854 14.3329C3.90521 13.7936 4.01121 13.1809 4.13387 12.471C4.26787 11.697 4.41987 10.819 3.93721 9.99769C3.12457 8.61307 1.33929 8.67574 0 9.55038L0.637314 10.5257C1.18996 10.1644 1.82661 10.009 2.29926 10.1197C3.40123 10.3784 3.06657 11.8036 2.98591 12.2723C2.84458 13.0876 2.68592 14.0122 3.21057 14.9175C4.09788 16.4468 6.5798 16.2822 8.07042 14.8569C7.80576 14.5856 7.54444 14.2969 7.28778 13.9849Z"
+                                    fill="white" />
+                            </svg>
+                            <span>+7 (3012) 66‒03‒66</span>
+                        </a>
+                    </div>
+                    <div
+                        class="footer-top_content d-flex flex-column flex-md-row align-items-center align-items-md-start">
+                        <div class="footer-top_info">
+                            <div class="footer-top_group">
+                                <span>Наш адрес:</span>
+                                <ul>
+                                    <li>г. Улан-Удэ, Борсоева, 56б</li>
+                                </ul>
+                            </div>
+                            <div class="footer-top_group">
+                                <span>Работаем для вас:</span>
+                                <ul>
+                                    <li>Ежедневно с 11:00 до 22:00</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="footer-top_group menu">
+                            <span>Работаем для вас:</span>
+                            <ul>
+                                <li>
+                                    <a href="#" class="link">
+                                        Контакты
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="link">
+                                        Доставка и Оплата
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="link">
+                                        Акции
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="social">
+                        <div class="d-flex">
+                            <a href="#" class="link mx-2">
+                                <img src="/assets/icons/instagram.png" alt="">
+                            </a>
+                            <a href="#" class="link mx-2">
+                                <img src="/assets/icons/whatsapp.png" alt="">
+                            </a>
+                            <a href="#" class="link mx-2">
+                                <img src="/assets/icons/viber.png" alt="">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-map">
+            <div style="position:relative;overflow:hidden;"><a
+                    href="https://yandex.ru/maps/org/tri_iksa_kafe_bar/36108488982/?utm_medium=mapframe&utm_source=maps"
+                    style="color:#eee;font-size:12px;position:absolute;top:0px;">Три Икса, кафе-бар</a><iframe
+                    src="https://yandex.ru/map-widget/v1/-/CCUMVXRZSB" width="100%" height="400" frameborder="0"
+                    allowfullscreen="true" style="position:relative;" loading="false"></iframe></div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="d-flex flex-column">
+                    <div class="d-flex flex-column flex-md-row justify-content-between align-items-center">
+                        <div class="d-flex flex-column">
+                            <a href="#" class="link">Подписаться на рассылку</a>
+                            <p class="mt-1">(можно отменить в любой момент)</p>
+                        </div>
+                        <div class="pay-services">
+                            <span>Способы оплаты:</span>
+                            <div>
+                                <a class="mx-2" href="#">
+                                    <img src="/assets/icons/visa.png" alt="">
+                                </a>
+                                <a class="mx-2" href="#">
+                                    <img src="/assets/icons/mir-logo.png" alt="">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="copyrate d-flex justify-content-center mt-4">
+                        <a href="#">
+                            <img src="/assets/icons/domino.svg" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="/assets/js/custom-select.js"></script>
+    <script src="/assets/js/main.js"></script>
 </body>
+
 </html>

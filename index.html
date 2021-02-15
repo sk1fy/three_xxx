@@ -16,7 +16,7 @@
         <div class="container">
             <div class="header-wrapper d-flex">
                 <div class="header-logo">
-                    <a href="#">
+                    <a href="/promotion.html">
                         <picture class="logo-image-block">
                             <img src="/assets/images/tri-iksa.logo.png" alt="">
                         </picture>
@@ -34,7 +34,8 @@
                 </div>
                 <div class="header-actions d-flex">
                     <span class="header-menu d-flex">
-                        <img src="/assets/icons/Menu.svg" alt="">
+                        <img class="active" src="/assets/icons/Menu.svg" alt="">
+                        <img src="/assets/icons/Close.svg" alt="">
                     </span>
                     <a class="header-login d-flex align-items-center" href="#">
                         <span class="login-name mr-2">Войти</span>
@@ -172,14 +173,14 @@
                                         Название блюда
                                     </div>
                                     <div class="d-flex justify-content-between align-items-center">
-                                        <div class="price">125 ₽</div>
+                                        <div class="price">от 125 ₽</div>
                                         <div class="sale"></div>
                                         <button class="btn" data-product="472" onclick="dataSetInfo(this)">
                                             <svg width="11" height="12" viewBox="0 0 11 12" fill="none"
                                                 xmlns="http://www.w3.org/2000/svg">
                                                 <rect x="1" y="5" width="9" height="2" fill="white" />
-                                                <rect x="4.5" y="10.5" width="9" height="2" transform="rotate(-90 4.5 10.5)"
-                                                    fill="white" />
+                                                <rect x="4.5" y="10.5" width="9" height="2"
+                                                    transform="rotate(-90 4.5 10.5)" fill="white" />
                                             </svg>
                                         </button>
                                     </div>
@@ -194,14 +195,14 @@
                                         Название блюда
                                     </div>
                                     <div class="d-flex justify-content-between align-items-center">
-                                        <div class="price">125 ₽</div>
+                                        <div class="price">от 125 ₽</div>
                                         <div class="sale">175 ₽</div>
                                         <button class="btn" data-product="473" onclick="dataSetInfo(this)">
                                             <svg width="11" height="12" viewBox="0 0 11 12" fill="none"
                                                 xmlns="http://www.w3.org/2000/svg">
                                                 <rect x="1" y="5" width="9" height="2" fill="white" />
-                                                <rect x="4.5" y="10.5" width="9" height="2" transform="rotate(-90 4.5 10.5)"
-                                                    fill="white" />
+                                                <rect x="4.5" y="10.5" width="9" height="2"
+                                                    transform="rotate(-90 4.5 10.5)" fill="white" />
                                             </svg>
                                         </button>
                                     </div>
@@ -216,14 +217,14 @@
                                         Название блюда две строки макс.
                                     </div>
                                     <div class="d-flex justify-content-between align-items-center">
-                                        <div class="price">125 ₽</div>
+                                        <div class="price">от 125 ₽</div>
                                         <div class="sale"></div>
                                         <button class="btn" data-product="474" onclick="dataSetInfo(this)">
                                             <svg width="11" height="12" viewBox="0 0 11 12" fill="none"
                                                 xmlns="http://www.w3.org/2000/svg">
                                                 <rect x="1" y="5" width="9" height="2" fill="white" />
-                                                <rect x="4.5" y="10.5" width="9" height="2" transform="rotate(-90 4.5 10.5)"
-                                                    fill="white" />
+                                                <rect x="4.5" y="10.5" width="9" height="2"
+                                                    transform="rotate(-90 4.5 10.5)" fill="white" />
                                             </svg>
                                         </button>
                                     </div>
@@ -289,7 +290,7 @@
                                     <div
                                         class="product-card_bottom d-flex justify-content-between align-items-center mt-3">
                                         <a class="product-card_add_to_cart btn btn-primary" href="#">В корзину</a>
-                                        <span class="price">125 ₽</span>
+                                        <span class="price">от 125 ₽</span>
                                         <span class="sale"></span>
                                     </div>
                                 </div>
@@ -391,7 +392,7 @@
                                     <div
                                         class="product-card_bottom d-flex justify-content-between align-items-center mt-3">
                                         <a class="product-card_add_to_cart btn btn-primary" href="#">В корзину</a>
-                                        <span class="price">125 ₽</span>
+                                        <span class="price">от 125 ₽</span>
                                         <span class="sale">175 ₽</span>
                                     </div>
                                 </div>
@@ -488,7 +489,7 @@
                                     <div
                                         class="product-card_bottom d-flex justify-content-between align-items-center mt-3">
                                         <a class="product-card_add_to_cart btn btn-primary" href="#">В корзину</a>
-                                        <span class="price">125 ₽</span>
+                                        <span class="price">от 125 ₽</span>
                                         <span class="sale"></span>
                                     </div>
                                 </div>
@@ -574,9 +575,23 @@
                                             <div
                                                 class="cart-item_bottom d-flex justify-content-between align-items-center">
                                                 <div class="count-group d-flex align-items-center">
-                                                    <button class="btn">-</button>
+                                                    <button class="btn"><svg width="24" height="24" viewBox="0 0 24 24"
+                                                            fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                            <circle cx="12" cy="12" r="12" fill="#F2F2F2" />
+                                                            <rect x="8" y="11" width="9" height="2" fill="#A7A7A7" />
+                                                        </svg>
+                                                    </button>
                                                     <span>2</span>
-                                                    <button class="btn add">+</button>
+                                                    <button class="btn add"><svg width="24" height="24"
+                                                            viewBox="0 0 24 24" fill="none"
+                                                            xmlns="http://www.w3.org/2000/svg">
+                                                            <circle opacity="0.1" cx="12" cy="12" r="12"
+                                                                fill="#E61E28" />
+                                                            <rect x="8" y="11" width="9" height="2" fill="#C1272D" />
+                                                            <rect x="11.5" y="16.5" width="9" height="2"
+                                                                transform="rotate(-90 11.5 16.5)" fill="#C1272D" />
+                                                        </svg>
+                                                    </button>
                                                 </div>
                                                 <div class="value">125 ₽</div>
                                             </div>
@@ -599,9 +614,23 @@
                                             </div>
                                             <div class="cart-item_bottom d-flex justify-content-between">
                                                 <div class="count-group d-flex align-items-center">
-                                                    <button class="btn">-</button>
+                                                    <button class="btn"><svg width="24" height="24" viewBox="0 0 24 24"
+                                                            fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                            <circle cx="12" cy="12" r="12" fill="#F2F2F2" />
+                                                            <rect x="8" y="11" width="9" height="2" fill="#A7A7A7" />
+                                                        </svg>
+                                                    </button>
                                                     <span>2</span>
-                                                    <button class="btn add">+</button>
+                                                    <button class="btn add"><svg width="24" height="24"
+                                                            viewBox="0 0 24 24" fill="none"
+                                                            xmlns="http://www.w3.org/2000/svg">
+                                                            <circle opacity="0.1" cx="12" cy="12" r="12"
+                                                                fill="#E61E28" />
+                                                            <rect x="8" y="11" width="9" height="2" fill="#C1272D" />
+                                                            <rect x="11.5" y="16.5" width="9" height="2"
+                                                                transform="rotate(-90 11.5 16.5)" fill="#C1272D" />
+                                                        </svg>
+                                                    </button>
                                                 </div>
                                                 <div class="value">125 ₽</div>
                                             </div>
@@ -611,7 +640,7 @@
                                         <span>Сумма заказа</span>
                                         <span>750 ₽</span>
                                     </div>
-                                    <button class="btn btn-primary mt-5">
+                                    <button class="btn btn-primary mt-3">
                                         оформить заказ
                                     </button>
                                     <p class="points mt-2">Будет начислено 55 бонусов</p>
@@ -619,8 +648,8 @@
                                 </div>
                             </details>
                         </div>
-                        <div class="cart-wrapper">
-                            <span style="color: #BDBDBD; font-size: 12px; padding-left: 10px;">Есть промокод?</span>
+                        <div class="cart-wrapper promo">
+                            <span style="color: #BDBDBD; font-size: 12px; padding-left: 15px;">Есть промокод?</span>
                             <div class="cart-promo-code">
                                 <input type="text" placeholder="Введите">
                                 <button class="btn" type="submit">ок</button>
@@ -630,33 +659,67 @@
                 </div>
             </div>
         </div>
-        <ul class="header-list-menu">
-            <li>
-                <a href="#" class="link">
-                    Контакты
-                </a>
-            </li>
-            <li>
-                <a href="#" class="link">
-                    Доставка и Оплата
-                </a>
-            </li>
-            <li>
-                <a href="#" class="link">
-                    Акции
-                </a>
-            </li>
-        </ul>
+        <div class="header-list-menu">
+            <ul>
+                <li>
+                    <a href="#" class="link">
+                        Контакты
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="link">
+                        Доставка и Оплата
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="link">
+                        Акции
+                    </a>
+                </li>
+            </ul>
+            <div class="mobile-add-info ">
+                <div class="top d-flex flex-column align-items-center">
+                    <small>Наш адрес:</small>
+                    <p>ул. Борсоева, 56</p>
+                    <a class="btn my-2" href="#">
+                        <img class="mr-1" src="/assets/icons/phone.svg" alt="">
+                        <span>8 (3012) 44-03-66</span>
+                    </a>
+                </div>
+                <div class="socials mt-3">
+                    <div class="d-flex">
+                        <a href="#" class="link mx-2">
+                            <img src="/assets/icons/instagram.png" alt="">
+                        </a>
+                        <a href="#" class="link mx-2">
+                            <img src="/assets/icons/whatsapp.png" alt="">
+                        </a>
+                        <a href="#" class="link mx-2">
+                            <img src="/assets/icons/viber.png" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
     </main>
+    <a class="mini-cart mini-cart_link link" href="#">
+        <span>750 ₽</span>
+        <svg width="27" height="24" viewBox="0 0 27 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+                d="M27 10.125V10.875C27 11.4963 26.4963 12 25.875 12H25.5L24.276 20.5682C24.1176 21.6767 23.1683 22.5 22.0486 22.5H4.95141C3.8317 22.5 2.88239 21.6767 2.724 20.5682L1.5 12H1.125C0.503672 12 0 11.4963 0 10.875V10.125C0 9.50368 0.503672 9.00001 1.125 9.00001H4.28161L9.28692 2.11778C9.77419 1.44784 10.7123 1.29967 11.3823 1.78693C12.0523 2.2742 12.2004 3.21231 11.7131 3.88229L7.99111 9.00001H19.0089L15.2869 3.88225C14.7996 3.21231 14.9478 2.27415 15.6178 1.78689C16.2877 1.29962 17.2259 1.44775 17.7131 2.11773L22.7184 9.00001H25.875C26.4963 9.00001 27 9.50368 27 10.125ZM14.625 18.375V13.125C14.625 12.5037 14.1213 12 13.5 12C12.8787 12 12.375 12.5037 12.375 13.125V18.375C12.375 18.9963 12.8787 19.5 13.5 19.5C14.1213 19.5 14.625 18.9963 14.625 18.375ZM19.875 18.375V13.125C19.875 12.5037 19.3713 12 18.75 12C18.1287 12 17.625 12.5037 17.625 13.125V18.375C17.625 18.9963 18.1287 19.5 18.75 19.5C19.3713 19.5 19.875 18.9963 19.875 18.375ZM9.375 18.375V13.125C9.375 12.5037 8.87133 12 8.25 12C7.62867 12 7.125 12.5037 7.125 13.125V18.375C7.125 18.9963 7.62867 19.5 8.25 19.5C8.87133 19.5 9.375 18.9963 9.375 18.375Z"
+                fill="white" />
+        </svg>
+    </a>
     <footer class="footer-wrapper">
         <div class="footer-top">
             <div class="container">
-                <div class="d-flex justify-content-between flex-wrap">
+                <div
+                    class="d-flex flex-column flex-md-row justify-content-md-between justify-content-center align-items-center flex-wrap">
                     <div class="footer-top_logo d-flex flex-column">
                         <picture>
                             <img src="/assets/images/tri-iksa.logo.png" alt="">
                         </picture>
-                        <a href="#" class="link mt-3">
+                        <a href="#" class="link mt-3 d-flex align-items-center">
                             <svg class="mr-2" width="16" height="16" viewBox="0 0 16 16" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <path fill="var(--primary-color)"
@@ -666,7 +729,8 @@
                             <span>+7 (3012) 66‒03‒66</span>
                         </a>
                     </div>
-                    <div class="footer-top_content d-flex">
+                    <div
+                        class="footer-top_content d-flex flex-column flex-md-row align-items-center align-items-md-start">
                         <div class="footer-top_info">
                             <div class="footer-top_group">
                                 <span>Наш адрес:</span>
@@ -723,25 +787,26 @@
                     href="https://yandex.ru/maps/org/tri_iksa_kafe_bar/36108488982/?utm_medium=mapframe&utm_source=maps"
                     style="color:#eee;font-size:12px;position:absolute;top:0px;">Три Икса, кафе-бар</a><iframe
                     src="https://yandex.ru/map-widget/v1/-/CCUMVXRZSB" width="100%" height="400" frameborder="0"
-                    allowfullscreen="true" style="position:relative;" style="pointer-events: none;"
-                    loading="false"></iframe></div>
+                    allowfullscreen="true" style="position:relative;" loading="false"></iframe></div>
         </div>
         <div class="footer-bottom">
             <div class="container">
                 <div class="d-flex flex-column">
-                    <div class="d-flex justify-content-between">
+                    <div class="d-flex flex-column flex-md-row justify-content-between align-items-center">
                         <div class="d-flex flex-column">
                             <a href="#" class="link">Подписаться на рассылку</a>
                             <p class="mt-1">(можно отменить в любой момент)</p>
                         </div>
                         <div class="pay-services">
                             <span>Способы оплаты:</span>
-                            <a class="mx-2" href="#">
-                                <img src="/assets/icons/visa.png" alt="">
-                            </a>
-                            <a class="mx-2" href="#">
-                                <img src="/assets/icons/mir-logo.png" alt="">
-                            </a>
+                            <div>
+                                <a class="mx-2" href="#">
+                                    <img src="/assets/icons/visa.png" alt="">
+                                </a>
+                                <a class="mx-2" href="#">
+                                    <img src="/assets/icons/mir-logo.png" alt="">
+                                </a>
+                            </div>
                         </div>
                     </div>
                     <div class="copyrate d-flex justify-content-center mt-4">
