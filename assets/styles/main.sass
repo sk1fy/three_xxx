@@ -246,7 +246,7 @@ summary
         justify-content: space-between
         flex-direction: column
     @media screen and ( max-width: $mobile )
-        transform: translate(-30%, 20%)
+        transform: translate(-100%, 20%)
     & .mobile-add-info
         display: none
         @media screen and ( max-width: $desktop-sm )
@@ -416,11 +416,17 @@ summary
             grid-template-columns: 1fr
         @media screen and ( max-width: $mobile)
             padding-top: 30px
+        &.order-grid
+            @media screen and ( max-width: $desktop-sm )
+                display: flex
+                flex-direction: column-reverse
         & .products-section
             position: relative
         & .cart
             position: relative
             margin-top: 105px
+            @media screen and ( max-width: $desktop-sm )
+                margin-top: 20px
             @media screen and ( max-width: $tablet )
                 display: none
             & .cart-wrapper
@@ -935,14 +941,119 @@ summary
         &::placeholder
             font-weight: 300
 
+.order-cart
+    @media screen and ( max-width: $mobile )
+        margin: 0 -20px
+    .cart-wrapper
+        background: #FFFFFF
+        box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.15), inset 0px 3px 0px #C1272D
+        border-radius: 10px
+        padding: 20px
+        & .cart-count
+            font-size: 14px
+            color: $sub-text-color
+        & .cart-items
+            display: flex
+            flex-direction: column
+            & .cart-item
+                display: flex
+                flex-direction: row
+                align-items: center
+                padding: 25px 0 15px
+                border-bottom: 1px solid #EBEBEB
+                position: relative
+                @media screen and ( max-width: $tablet )
+                    flex-direction: column
+                &_top
+                    flex: 3
+                &_thumb
+                    & img
+                        width: 100px
+                        height: auto
+                        border-radius: 7px
+                &_title
+                    flex: 3
+                    padding: 0 15px
+                    align-self: center
+                    & p
+                        font-size: 14px
+                        color: $title-color
+                    & span
+                        font-size: 12px
+                        color: $sub-text-color
+                &_bottom
+                    align-items: center
+                    margin: 10px 20px 0
+                    flex: 1
+                    @media screen and ( max-width: $tablet )
+                        flex: none
+                        width: 100%
+                        margin: 12px 0
+                        padding: 0 15px 0 120px
+                        align-items: flex-end
+
+                    @media screen and ( max-width: $mobile )
+                        margin-top: 15px
+                    & .count-group
+                        margin: 0 15px
+                &_value
+                    flex: 1
+                    align-self: center
+                    text-align: center
+                    color: $title-color
+                    @media screen and ( max-width: $tablet )
+                        text-align: end
+                &_delete_btn
+                    position: absolute
+                    top: 25px
+                    right: 5px
+                    @media screen and ( max-width: $mobile )
+                        right: 0
 .order-wrapper
+    .contacts-group
+        display: flex
+        @media screen and ( max-width: $tablet )
+            display: block
+        & .input-text-group
+            @media screen and ( max-width: $tablet )
+                margin-top: 10px
     .delivery
-        max-width: 300px
+        .option_group_map
+            max-width: 300px
     .address_properties
         display: flex
         align-items: flex-end
+        flex-wrap: wrap
         gap: 15px
+        & .input-text-group
+            flex: 1
+            @media screen and ( max-width: $tablet )
+                flex: none
+                width: 40%
     .delivery-time
-        max-width: 300px
+        .option_group_map
+            max-width: 300px
+        .input-text-group
+            width: 100%
     .pay
-        max-width: 450px
+        .option_group_map
+            max-width: 450px
+    .commentary
+        .input-textarea-group
+            display: flex
+            flex-direction: column
+            & span
+                color: $sub-text-color
+                font-size: 12px
+                padding-left: 15px
+            & .input-textarea
+                padding: 10px
+                border: none
+                background: #F2F2F2
+                border-radius: 18px
+                margin-top: 3px
+                outline: transparent
+                width: 100%
+                font-size: 15px
+                font-weight: 300
+                resize: none

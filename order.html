@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/assets/styles/grid.css">
+    <link rel="stylesheet" href="/assets/styles/custom-checkbox.css">
+    <link rel="stylesheet" href="/assets/styles/vanilla-select.css">
     <link rel="stylesheet" href="/assets/styles/main.css">
     <title>Order</title>
 </head>
@@ -47,17 +49,74 @@
     <main>
         <div class="main-products-wrapper">
             <div class="products-cart-wrapper">
-                <div class="container grid">
+                <div class="container grid order-grid">
                     <div class="products-section">
                         <p class="section-title h1">
                             Оформление заказа
                         </p>
-                        <div>
-                            1
+                        <div class="order-cart">
+                            <div class="cart-wrapper">
+                                <div class="cart-wrapper_header d-flex justify-content-between align-items-center">
+                                    <div class="d-flex">
+                                        <p class="section-title h3">
+                                            Корзина
+                                        </p>
+                                        <span class="cart-count ml-1">(3)</span>
+                                    </div>
+                                    <picture>
+                                        <img src="/assets/icons/cart-icon-red.svg" alt="">
+                                    </picture>
+                                </div>
+                                <div class="cart-items">
+                                    <div class="cart-item">
+                                        <div class="cart-item_top d-flex">
+                                            <picture class="cart-item_thumb">
+                                                <img src="/assets/images/pizza-card.png" alt="">
+                                            </picture>
+                                            <div class="cart-item_title">
+                                                <p>Название блюда, может быть и длинным, но не слишком</p>
+                                                <span>Толстое, 23 см</span>
+                                                <span class="add">
+                                                    + лук, + маринованные огурцы
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <div
+                                                class="cart-item_bottom d-flex justify-content-between">
+                                                <div class="count-group d-flex align-items-center">
+                                                    <button class="btn"><svg width="24" height="24" viewBox="0 0 24 24"
+                                                            fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                            <circle cx="12" cy="12" r="12" fill="#F2F2F2" />
+                                                            <rect x="8" y="11" width="9" height="2" fill="#A7A7A7" />
+                                                        </svg>
+                                                    </button>
+                                                    <span class="mx-2">2</span>
+                                                    <button class="btn add"><svg width="24" height="24"
+                                                            viewBox="0 0 24 24" fill="none"
+                                                            xmlns="http://www.w3.org/2000/svg">
+                                                            <circle opacity="0.1" cx="12" cy="12" r="12"
+                                                                fill="#E61E28" />
+                                                            <rect x="8" y="11" width="9" height="2" fill="#C1272D" />
+                                                            <rect x="11.5" y="16.5" width="9" height="2"
+                                                                transform="rotate(-90 11.5 16.5)" fill="#C1272D" />
+                                                        </svg>
+                                                    </button>
+                                                </div>
+                                                <div class="cart-item_value">125 ₽</div>
+                                            </div>
+                                        <div class="cart-item_delete_btn">
+                                            <a href="#" class="cart-item_delete">
+                                                <img src="/assets/icons/delete.svg" alt="">
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="cart-footer"></div>
+                            </div>
                         </div>
                         <div class="order-wrapper mt-5">
                             <p class="section-title h3">Контакты</p>
-                            <div class="d-flex contacts-group">
+                            <div class="contacts-group">
                                 <div class="input-text-group">
                                     <span>Имя*</span>
                                     <input class="input-text" type="text">
@@ -146,14 +205,30 @@
                                                 сайте</span></label>
                                     </div>
                                 </div>
-                                <div class="input-text-group mt-3">
+                                <div class="input-text-group mt-4">
                                     <span>Сдача с:</span>
                                     <input class="input-text" type="text">
                                 </div>
+                                <div class="input-text-group contain mt-4">
+                                    <label for="policy">Бесконтактная доставка
+                                        <input type="checkbox" id="policy" name="policy" value="on" aria-invalid="false"
+                                            style="float: none">
+                                        <span class="checkmark"></span></label>
+                                    <p>Бесконтактная доставка возможна только при оплате картой на сайте</p>
+                                </div>
+                            </div>
+                            <div class="commentary mt-5">
+                                <div class="input-textarea-group mt-3">
+                                    <span>Комментарий для курьера:</span>
+                                    <textarea class="input-textarea" id="comment" name="comment" rows="4"></textarea>
+                                </div>
+                            </div>
+                            <div class="order-btn mt-5">
+                                <a class="btn btn-primary" href="#">перейти к оплате</a>
                             </div>
                         </div>
                     </div>
-                    <aside class="cart">
+                    <aside class="cart d-block">
                         <div class="cart-wrapper promo">
                             <span style="color: #BDBDBD; font-size: 12px; padding-left: 15px;">Есть промокод?</span>
                             <div class="cart-promo-code">
@@ -325,7 +400,7 @@
         </div>
     </footer>
 
-    <script src="/assets/js/custom-select.js"></script>
+    <script src="/assets/js/vanilla-select.min.js"></script>
     <script src="/assets/js/main.js"></script>
 </body>
 

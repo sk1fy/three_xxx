@@ -31,17 +31,18 @@ document.querySelector(".header-menu").onclick = function () {
   }
 };
 
+const cardWrapper = document.querySelector(".products-wrapper");
 function showModalOverlay(el) {
-  document.querySelector(el).classList.add("show");
+  cardWrapper.querySelector(el).classList.add("show");
 }
 
 function closeModalOverlay(el) {
-  document.querySelector(el).classList.remove("show");
+  cardWrapper.querySelector(el).classList.remove("show");
 }
 
 function dataSetInfo(e) {
   const data = e.dataset.product;
-  const element = document.querySelector(`#product-${data}`);
+  const element = cardWrapper.querySelector(`#product-${data}`);
   element.classList.remove("closed");
   element.classList.toggle("fixed");
   setTimeout(function () {
